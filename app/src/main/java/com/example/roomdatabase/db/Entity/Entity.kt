@@ -10,6 +10,6 @@ import com.example.roomdatabase.db.DbHandler
 data class EntitiUser(
 
     @PrimaryKey(autoGenerate = true) val id:Int = 0,
-    @ColumnInfo val name: String,
-    @ColumnInfo val phone:String
+    @ColumnInfo var name: String = "",
+    @ColumnInfo var phone:String =  ""
 )

@@ -6,10 +6,11 @@ import android.content.Entity
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.roomdatabase.db.Entity.EntitiUser
 import com.example.roomdatabase.db.dao.UserDao
 
 @Database(
-    entities = [Entity::class],
+    entities = [EntitiUser::class],
     version = DbHandler.DATABASE_VERSION
 )
 abstract class DbHandler : RoomDatabase() {
